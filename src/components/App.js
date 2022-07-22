@@ -1,11 +1,14 @@
 import React from "react";
-import "./App.css";
-import NavbarComponent from '../components/Navbar'
+import NavbarComponent from "./NavbarComponent";
+import LocationCard from "./LocationCard";
 
 function App() {
-  return <div className="App">
-    <NavbarComponent/>
-  </div>;
+  return (
+    <div className="App">
+      <NavbarComponent />
+      <LocationCard />
+    </div>
+  );
 }
 
 export default App;

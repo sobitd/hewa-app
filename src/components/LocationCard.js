@@ -1,18 +1,19 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 
 function LocationCard() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card
+      style={{ width: "80vw", margin: "2rem auto", height:"auto", padding: "2rem" }}
+    >
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Img
+        //   style={{ width: "50vw", height: "60vh", padding: "2rem" }}
+          src={process.env.PUBLIC_URL + "weather.png"}
+          alt="img"
+        />
+        <Card.Text>Weather App coming soon!</Card.Text>
       </Card.Body>
     </Card>
   );
